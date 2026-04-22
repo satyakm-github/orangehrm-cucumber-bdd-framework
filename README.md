@@ -57,6 +57,7 @@ The objective of this project is to deliver a maintainable, reusable, and busine
 ├── LICENSE
 └── README.md
 ```
+---
 
 ## ✅ Test Scenarios Covered
 
@@ -72,6 +73,8 @@ The following functional test scenarios are automated in this framework:
 8. Add Employee functionality → Employee is created with First & Last name and redirected to Personal Details page
 9. Verify Employee creation → Newly added employee appears in Employee List search results
 10. Edit Employee functionality → Existing employee details can be updated successfully
+
+---
 
 ## ⚙️ Installation & Setup
 
