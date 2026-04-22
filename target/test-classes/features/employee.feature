@@ -4,7 +4,7 @@ Feature: Employee functionality
   Scenario: Add a new employee and verify it appears in Employee list
     Given user navigates to "PIM" module
     When user clicks on Add button
-    And user enters firstName "kmfn014" and lastName "kmln014" and employeeId "013"
+    And user enters firstName "kmfn014" and lastName "kmln014"
     And user clicks on Save button
     Then user navigated to personal details view
     

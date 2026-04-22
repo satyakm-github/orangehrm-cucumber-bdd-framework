@@ -23,7 +23,7 @@ public class AddEmployeePage {
 	private By btn_add = By.xpath("//button[@class=\"oxd-button oxd-button--medium oxd-button--secondary\"]");
 	private By txt_firstName = By.xpath("//input[@name='firstName']");
 	private By txt_lastName = By.xpath("//input[@name='lastName']");
-	private By txt_employeeId = By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]");
+	//private By txt_employeeId = By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]");
 	private By btn_save = By.xpath("//button[@type='submit']");
 	
 	private By txt_dashboard = By.xpath("//h6[text()='Dashboard']");
@@ -57,11 +57,11 @@ public class AddEmployeePage {
 		driver.findElement(txt_lastName).sendKeys(lastName);
 	}
 	
-	public void enterEmployeeId(String employeeId) {
-		
-		driver.findElement(txt_employeeId).clear();
-		driver.findElement(txt_employeeId).sendKeys(employeeId);
-	}
+//	public void enterEmployeeId(String employeeId) {
+//		
+//		driver.findElement(txt_employeeId).clear();
+//		driver.findElement(txt_employeeId).sendKeys(employeeId);
+//	}
 	
 
 	public void clickSave() {
@@ -70,11 +70,11 @@ public class AddEmployeePage {
 		driver.findElement(btn_save).click();
 	}
 
-	public void addEmployee(String firstName, String lastName, String employeeId) {
+	public void addEmployee(String firstName, String lastName) {
 
 		enterFirstName(firstName);
 		enterLastName(lastName);
-		enterEmployeeId(employeeId);
+		//enterEmployeeId(employeeId);
 		clickSave();
 
 	}

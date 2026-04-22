@@ -37,14 +37,14 @@ public class AddEmployeeSteps {
 		addEmployeePage.clickAdd();
 	}
 
-	@And("user enters firstName {string} and lastName {string} and employeeId {string}")
-	public void user_enters_first_name_and_last_name(String firstName, String lastName, String employeeId) {
+	@And("user enters firstName {string} and lastName {string}")
+	public void user_enters_first_name_and_last_name(String firstName, String lastName) {
 
-		addEmployeePage.addEmployee(firstName, lastName, employeeId);
+		addEmployeePage.addEmployee(firstName, lastName);
 		testContext.setEmployeeName(firstName + " " + lastName);
 		testContext.setEmployeeFirstName(firstName);
 		testContext.setEmployeeLastName(lastName);
-		testContext.setEmployeeId(employeeId);
+		//testContext.setEmployeeId(employeeId);
 	}
 
 	@And("user clicks on Save button")

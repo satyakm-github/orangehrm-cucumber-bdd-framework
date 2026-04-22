@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 22 10:34:15 BST 2026</td>
+<td>Started on:</td><td>Wed Apr 22 14:07:17 BST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>145 seconds (145475 ms)</td>
+<tr><td>Total time:</td><td>73 seconds (73682 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,47 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to module from global search", "Module navigation from global search"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //input[@placeholder=&apos;Search&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search&apos;]&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51573}, goog:processID: 21664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51573/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc041f4ef2ef0ce663b6b885405d6c93
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.keerthi.orangehrm.components.HeaderComponent.globalSearch(HeaderComponent.java:32)
+	at com.keerthi.orangehrm.stepdefinitions.NavigationSteps.user_enters_a_name_in_global_search(NavigationSteps.java:23)
+	at ✽.user enters a &quot;Directory&quot; name in global search(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/navigation.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2121744549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2121744549'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //input[@placeholder=&apos;Search&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search&apos;]&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51573}, goog:processID: 21664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51573/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc041f4ef2ef0ce663b6b885405d6c93
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.keerthi.orangehrm.components.HeaderComponent.globalSearch(HeaderComponent.java:32)
+	at com.keerthi.orangehrm.stepdefinitions.NavigationSteps.user_enters_a_name_in_global_search(NavigationSteps.java:23)
+	at ✽.user enters a &quot;Directory&quot; name in global search(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/navigation.feature:5)
+</pre></div></td>
+<td>14</td>
+<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
+<tr>
 <td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a new employee and verify it appears in Employee list", "Employee functionality"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; data-v-304890b0=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1787, 493). Other element would receive the click: &lt;div data-v-d5bfe35b=&quot;&quot; class=&quot;oxd-form-loader&quot;&gt;...&lt;/div&gt;
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
 Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10bd9dab6b6e1c56c788b3d95dc25d2c, clickElement {id=f.32627ED42954944170D2EF11AEFC2D8A.d.9AA7783F24641956BA6FD8CFE471C8A8.e.111}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54420}, goog:processID: 19752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54420/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (10bd9dab6b6e1c56c788b3d95dc25d2c)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
-Session ID: 10bd9dab6b6e1c56c788b3d95dc25d2c
+Command: [1bc604f69e2eacc5bd84d02e6d1f6578, getElementText {id=f.17CBEC103F43D22EC79CA7C03A1FC076.d.586A9C81E810833EEF2E4168DB171C2E.e.135}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, goog:processID: 11568, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1bc604f69e2eacc5bd84d02e6d1f6578)] -&gt; xpath: //div[@class=&apos;oxd-table-row oxd-table-row--with-border oxd-table-row--clickable&apos;]//div[3]]
+Session ID: 1bc604f69e2eacc5bd84d02e6d1f6578
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -94,21 +125,21 @@ Session ID: 10bd9dab6b6e1c56c788b3d95dc25d2c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at com.keerthi.orangehrm.pages.AddEmployeePage.clickSave(AddEmployeePage.java:70)
-	at com.keerthi.orangehrm.pages.AddEmployeePage.addEmployee(AddEmployeePage.java:78)
-	at com.keerthi.orangehrm.stepdefinitions.AddEmployeeSteps.user_enters_first_name_and_last_name(AddEmployeeSteps.java:43)
-	at ✽.user enters firstName &quot;kmfn013&quot; and lastName &quot;kmln013&quot; and employeeId &quot;013&quot;(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/employee.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1881868027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1881868027'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; data-v-304890b0=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1787, 493). Other element would receive the click: &lt;div data-v-d5bfe35b=&quot;&quot; class=&quot;oxd-form-loader&quot;&gt;...&lt;/div&gt;
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at com.keerthi.orangehrm.pages.EmployeeListPage.getEmpFirstName(EmployeeListPage.java:60)
+	at com.keerthi.orangehrm.stepdefinitions.EmployeeListSteps.newly_created_employee_should_be_listed_in_records(EmployeeListSteps.java:51)
+	at ✽.newly created employee should be listed in records(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/employee.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1273689789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1273689789'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
 Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10bd9dab6b6e1c56c788b3d95dc25d2c, clickElement {id=f.32627ED42954944170D2EF11AEFC2D8A.d.9AA7783F24641956BA6FD8CFE471C8A8.e.111}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54420}, goog:processID: 19752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54420/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (10bd9dab6b6e1c56c788b3d95dc25d2c)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
-Session ID: 10bd9dab6b6e1c56c788b3d95dc25d2c
+Command: [1bc604f69e2eacc5bd84d02e6d1f6578, getElementText {id=f.17CBEC103F43D22EC79CA7C03A1FC076.d.586A9C81E810833EEF2E4168DB171C2E.e.135}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, goog:processID: 11568, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1bc604f69e2eacc5bd84d02e6d1f6578)] -&gt; xpath: //div[@class=&apos;oxd-table-row oxd-table-row--with-border oxd-table-row--clickable&apos;]//div[3]]
+Session ID: 1bc604f69e2eacc5bd84d02e6d1f6578
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -117,73 +148,12 @@ Session ID: 10bd9dab6b6e1c56c788b3d95dc25d2c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at com.keerthi.orangehrm.pages.AddEmployeePage.clickSave(AddEmployeePage.java:70)
-	at com.keerthi.orangehrm.pages.AddEmployeePage.addEmployee(AddEmployeePage.java:78)
-	at com.keerthi.orangehrm.stepdefinitions.AddEmployeeSteps.user_enters_first_name_and_last_name(AddEmployeeSteps.java:43)
-	at ✽.user enters firstName &quot;kmfn013&quot; and lastName &quot;kmln013&quot; and employeeId &quot;013&quot;(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/employee.feature:7)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at com.keerthi.orangehrm.pages.EmployeeListPage.getEmpFirstName(EmployeeListPage.java:60)
+	at com.keerthi.orangehrm.stepdefinitions.EmployeeListSteps.newly_created_employee_should_be_listed_in_records(EmployeeListSteps.java:51)
+	at ✽.newly created employee should be listed in records(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/employee.feature:15)
 </pre></div></td>
-<td>23</td>
-<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
-<tr>
-<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to module from global search", "Module navigation from global search"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //input[@placeholder=&apos;Search&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search&apos;]&quot;}.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52390}, goog:processID: 5056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52390/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 823f41e8d02b994797137243fd675124
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.keerthi.orangehrm.components.HeaderComponent.globalSearch(HeaderComponent.java:32)
-	at com.keerthi.orangehrm.stepdefinitions.NavigationSteps.user_enters_a_name_in_global_search(NavigationSteps.java:23)
-	at ✽.user enters a &quot;Directory&quot; name in global search(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/navigation.feature:5)
-</pre></div><a href='#' onClick='toggleBox("stack-trace620471432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace620471432'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //input[@placeholder=&apos;Search&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search&apos;]&quot;}.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52390}, goog:processID: 5056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52390/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 823f41e8d02b994797137243fd675124
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.keerthi.orangehrm.components.HeaderComponent.globalSearch(HeaderComponent.java:32)
-	at com.keerthi.orangehrm.stepdefinitions.NavigationSteps.user_enters_a_name_in_global_search(NavigationSteps.java:23)
-	at ✽.user enters a &quot;Directory&quot; name in global search(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/navigation.feature:5)
-</pre></div></td>
-<td>20</td>
-<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
-<tr>
-<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to module from global search", "Module navigation from global search"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //input[@placeholder=&apos;Search&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search&apos;]&quot;}.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57062}, goog:processID: 16744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57062/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1ff2a7e61ade53aac5a7b542b30f2751
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.keerthi.orangehrm.components.HeaderComponent.globalSearch(HeaderComponent.java:32)
-	at com.keerthi.orangehrm.stepdefinitions.NavigationSteps.user_enters_a_name_in_global_search(NavigationSteps.java:23)
-	at ✽.user enters a &quot;PIM&quot; name in global search(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/navigation.feature:5)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1703458581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1703458581'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //input[@placeholder=&apos;Search&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search&apos;]&quot;}.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57062}, goog:processID: 16744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57062/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1ff2a7e61ade53aac5a7b542b30f2751
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.keerthi.orangehrm.components.HeaderComponent.globalSearch(HeaderComponent.java:32)
-	at com.keerthi.orangehrm.stepdefinitions.NavigationSteps.user_enters_a_name_in_global_search(NavigationSteps.java:23)
-	at ✽.user enters a &quot;PIM&quot; name in global search(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/navigation.feature:5)
-</pre></div></td>
-<td>16</td>
+<td>15</td>
 <td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -197,37 +167,42 @@ Session ID: 1ff2a7e61ade53aac5a7b542b30f2751
 <tr>
 <td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid login shows error message", "Validate Login Functionality"</td>
 <td></td>
-<td>4</td>
-<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
-<tr>
-<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid login with admin credentials", "Validate Login Functionality"</td>
-<td></td>
-<td>8</td>
-<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
-<tr>
-<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to module from global search", "Module navigation from global search"</td>
-<td></td>
-<td>33</td>
-<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
-<tr>
-<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to module from global search", "Module navigation from global search"</td>
-<td></td>
-<td>23</td>
+<td>3</td>
 <td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
 <tr>
 <td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid login shows error message", "Validate Login Functionality"</td>
+<td></td>
+<td>3</td>
+<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
+<tr>
+<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to module from global search", "Module navigation from global search"</td>
+<td></td>
+<td>14</td>
+<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
+<tr>
+<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid login shows error message", "Validate Login Functionality"</td>
+<td></td>
+<td>3</td>
+<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
+<tr>
+<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to module from global search", "Module navigation from global search"</td>
 <td></td>
 <td>5</td>
 <td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
 <tr>
 <td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid login shows error message", "Validate Login Functionality"</td>
 <td></td>
+<td>2</td>
+<td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
+<tr>
+<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid login with admin credentials", "Validate Login Functionality"</td>
+<td></td>
 <td>4</td>
 <td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
 <tr>
-<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid login shows error message", "Validate Login Functionality"</td>
+<td title='com.keerthi.orangehrm.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.keerthi.orangehrm.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to module from global search", "Module navigation from global search"</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>com.keerthi.orangehrm.runners.TestRunner@1a677343</td></tr>
 </table><p>
 </body>

@@ -7,7 +7,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 7 9"/>
+          <include name="runScenario" invocation-numbers="0 9"/>
         </methods>
       </class> <!-- com.keerthi.orangehrm.runners.TestRunner -->
     </classes>
