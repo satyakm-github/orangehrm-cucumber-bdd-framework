@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="7" failed="3" skipped="0">
+<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-22T10:34:15 BST" name="Default suite" finished-at="2026-04-22T10:36:41 BST" duration-ms="145475">
+  <suite started-at="2026-04-22T14:07:17 BST" name="Default suite" finished-at="2026-04-22T14:08:30 BST" duration-ms="73682">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-22T10:34:15 BST" name="Default test" finished-at="2026-04-22T10:36:41 BST" duration-ms="145475">
+    <test started-at="2026-04-22T14:07:17 BST" name="Default test" finished-at="2026-04-22T14:08:30 BST" duration-ms="73682">
       <class name="com.keerthi.orangehrm.runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:34:15 BST" name="setUpClass" finished-at="2026-04-22T10:34:16 BST" duration-ms="575" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:07:17 BST" name="setUpClass" finished-at="2026-04-22T14:07:17 BST" duration-ms="561" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@687389a6]]>
+                <![CDATA[org.testng.TestRunner@2407a36c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:34:16 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:34:39 BST" duration-ms="23216" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:07:17 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:07:33 BST" duration-ms="15663" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,28 +34,30 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element click intercepted: Element <button data-v-10d463b7="" data-v-304890b0="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space">...</button> is not clickable at point (1787, 493). Other element would receive the click: <div data-v-d5bfe35b="" class="oxd-form-loader">...</div>
+              <![CDATA[stale element reference: stale element not found in the current frame
   (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
 Build info: version: '4.40.0', revision: 'b3333f1'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10bd9dab6b6e1c56c788b3d95dc25d2c, clickElement {id=f.32627ED42954944170D2EF11AEFC2D8A.d.9AA7783F24641956BA6FD8CFE471C8A8.e.111}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54420}, goog:processID: 19752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54420/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (10bd9dab6b6e1c56c788b3d95dc25d2c)] -> xpath: //button[@type='submit']]
-Session ID: 10bd9dab6b6e1c56c788b3d95dc25d2c]]>
+Command: [1bc604f69e2eacc5bd84d02e6d1f6578, getElementText {id=f.17CBEC103F43D22EC79CA7C03A1FC076.d.586A9C81E810833EEF2E4168DB171C2E.e.135}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, goog:processID: 11568, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1bc604f69e2eacc5bd84d02e6d1f6578)] -> xpath: //div[@class='oxd-table-row oxd-table-row--with-border oxd-table-row--clickable']//div[3]]
+Session ID: 1bc604f69e2eacc5bd84d02e6d1f6578]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-v-10d463b7="" data-v-304890b0="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space">...</button> is not clickable at point (1787, 493). Other element would receive the click: <div data-v-d5bfe35b="" class="oxd-form-loader">...</div>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
 Build info: version: '4.40.0', revision: 'b3333f1'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10bd9dab6b6e1c56c788b3d95dc25d2c, clickElement {id=f.32627ED42954944170D2EF11AEFC2D8A.d.9AA7783F24641956BA6FD8CFE471C8A8.e.111}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54420}, goog:processID: 19752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54420/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (10bd9dab6b6e1c56c788b3d95dc25d2c)] -> xpath: //button[@type='submit']]
-Session ID: 10bd9dab6b6e1c56c788b3d95dc25d2c
+Command: [1bc604f69e2eacc5bd84d02e6d1f6578, getElementText {id=f.17CBEC103F43D22EC79CA7C03A1FC076.d.586A9C81E810833EEF2E4168DB171C2E.e.135}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, goog:processID: 11568, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1bc604f69e2eacc5bd84d02e6d1f6578)] -> xpath: //div[@class='oxd-table-row oxd-table-row--with-border oxd-table-row--clickable']//div[3]]
+Session ID: 1bc604f69e2eacc5bd84d02e6d1f6578
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -64,18 +66,17 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.keerthi.orangehrm.pages.AddEmployeePage.clickSave(AddEmployeePage.java:70)
-at com.keerthi.orangehrm.pages.AddEmployeePage.addEmployee(AddEmployeePage.java:78)
-at com.keerthi.orangehrm.stepdefinitions.AddEmployeeSteps.user_enters_first_name_and_last_name(AddEmployeeSteps.java:43)
-at ✽.user enters firstName "kmfn013" and lastName "kmln013" and employeeId "013"(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/employee.feature:7)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+at com.keerthi.orangehrm.pages.EmployeeListPage.getEmpFirstName(EmployeeListPage.java:60)
+at com.keerthi.orangehrm.stepdefinitions.EmployeeListSteps.newly_created_employee_should_be_listed_in_records(EmployeeListSteps.java:51)
+at ✽.newly created employee should be listed in records(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/employee.feature:15)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:34:39 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:34:48 BST" duration-ms="8658" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:07:33 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:07:37 BST" duration-ms="4163" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,7 +92,7 @@ at ✽.user enters firstName "kmfn013" and lastName "kmln013" and employeeId "01
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:34:48 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:34:52 BST" duration-ms="4403" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:07:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:07:40 BST" duration-ms="3384" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,7 +108,7 @@ at ✽.user enters firstName "kmfn013" and lastName "kmln013" and employeeId "01
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:34:52 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:34:56 BST" duration-ms="4088" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:07:40 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:07:44 BST" duration-ms="3869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,7 +124,7 @@ at ✽.user enters firstName "kmfn013" and lastName "kmln013" and employeeId "01
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:34:56 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:35:01 BST" duration-ms="5240" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:07:44 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:07:48 BST" duration-ms="3446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,7 +140,7 @@ at ✽.user enters firstName "kmfn013" and lastName "kmln013" and employeeId "01
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:35:01 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:35:06 BST" duration-ms="4552" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:07:48 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:07:50 BST" duration-ms="2590" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,7 +156,7 @@ at ✽.user enters firstName "kmfn013" and lastName "kmln013" and employeeId "01
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:35:06 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:35:30 BST" duration-ms="23527" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:07:50 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:07:56 BST" duration-ms="5706" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,49 +172,7 @@ at ✽.user enters firstName "kmfn013" and lastName "kmln013" and employeeId "01
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:35:30 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:35:46 BST" duration-ms="16892" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Navigate to module from global search"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Module navigation from global search"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element found by By.xpath: //input[@placeholder='Search'], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Search']"}.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57062}, goog:processID: 16744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57062/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1ff2a7e61ade53aac5a7b542b30f2751]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //input[@placeholder='Search'], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Search']"}.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57062}, goog:processID: 16744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57062/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1ff2a7e61ade53aac5a7b542b30f2751
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.keerthi.orangehrm.components.HeaderComponent.globalSearch(HeaderComponent.java:32)
-at com.keerthi.orangehrm.stepdefinitions.NavigationSteps.user_enters_a_name_in_global_search(NavigationSteps.java:23)
-at ✽.user enters a "PIM" name in global search(file:///C:/Users/Keerthi/Desktop/selenium-pom-java-cucumber/orangehrm-cucumber-bdd-framework/src/test/resources/features/navigation.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:35:46 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:36:20 BST" duration-ms="33740" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:07:56 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:08:01 BST" duration-ms="5157" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -229,7 +188,23 @@ at ✽.user enters a "PIM" name in global search(file:///C:/Users/Keerthi/Deskto
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:36:20 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T10:36:40 BST" duration-ms="20324" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:08:01 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:08:16 BST" duration-ms="14719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to module from global search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Module navigation from global search"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:08:16 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T14:08:30 BST" duration-ms="14126" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -249,8 +224,8 @@ at ✽.user enters a "PIM" name in global search(file:///C:/Users/Keerthi/Deskto
 Build info: version: '4.40.0', revision: 'b3333f1'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52390}, goog:processID: 5056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52390/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 823f41e8d02b994797137243fd675124]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51573}, goog:processID: 21664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51573/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc041f4ef2ef0ce663b6b885405d6c93]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //input[@placeholder='Search'], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Search']"}.
@@ -258,8 +233,8 @@ Session ID: 823f41e8d02b994797137243fd675124]]>
 Build info: version: '4.40.0', revision: 'b3333f1'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52390}, goog:processID: 5056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52390/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 823f41e8d02b994797137243fd675124
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Keerthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51573}, goog:processID: 21664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51573/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc041f4ef2ef0ce663b6b885405d6c93
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 at com.keerthi.orangehrm.components.HeaderComponent.globalSearch(HeaderComponent.java:32)
@@ -271,7 +246,7 @@ at ✽.user enters a "Directory" name in global search(file:///C:/Users/Keerthi/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T10:36:40 BST" name="tearDownClass" finished-at="2026-04-22T10:36:41 BST" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.keerthi.orangehrm.runners.TestRunner@1a677343]" started-at="2026-04-22T14:08:30 BST" name="tearDownClass" finished-at="2026-04-22T14:08:30 BST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
